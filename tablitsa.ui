@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tablitsa</class>
+ <widget class="QMainWindow" name="tablitsa">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>tablitsa</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="addButton"/>
+   <addaction name="delButton"/>
+   <addaction name="editButton"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Таблица</string>
+    </property>
+    <addaction name="addButton"/>
+    <addaction name="delButton"/>
+    <addaction name="editButton"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionGithub"/>
+    <addaction name="gorit"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="addButton">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/res/img/add.png</normaloff>:/res/img/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Q</string>
+   </property>
+  </action>
+  <action name="delButton">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/res/img/del.png</normaloff>:/res/img/del.png</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+W</string>
+   </property>
+  </action>
+  <action name="editButton">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/res/img/edit.png</normaloff>:/res/img/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Редактировать запись</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+E</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="icon">
+    <iconset>
+     <normaloff>img/GitHub_logo.png</normaloff>
+     <normalon>:/res/img/GitHub_logo.png</normalon>img/GitHub_logo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Github проекта</string>
+   </property>
+  </action>
+  <action name="gorit">
+   <property name="text">
+    <string>Горячие клавиши</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

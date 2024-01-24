@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>img/add.png</file>
+        <file>img/del.png</file>
+        <file>img/edit.png</file>
+        <file>img/GitHub_logo.png</file>
+    </qresource>
+</RCC>
